@@ -1,0 +1,194 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    box-sizing:border-box;
+    border:1px solid grey;
+    max-width: 100%;
+} */
+
+/*general styles*/
+
+html{
+    font-size:62.5%
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family:'Roboto Mono', monospace;
+}
+
+
+h1{
+    font-family:'Chelsea Market', cursive;
+    font-size:6rem;
+}
+
+section{
+    padding: 4% 0;
+    width:90%;
+    margin: 0 auto;
+}
+
+/*header styles*/
+
+nav{
+    padding:2% 0;
+}
+
+nav a{
+    display: inline-block;
+    padding: 1% 0;
+    width:10%;
+    text-align:center;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+
+}
+
+.orange-box{
+    background-color:#FF764E;
+    margin-left:10%;
+}
+
+.blue-box{
+   background-color:#5ED3EB;
+   margin: 0 24%;
+}
+
+.yellow-box{
+    background-color:#FFCD69;
+    margin-right:10%;
+}
+
+/*cta styles*/
+.cta{
+    position:relative;
+}
+
+.text, .image{
+    display: inline-block;
+}
+
+.image{
+    width:30%;
+}
+
+.image img{
+    border-radius:50%;
+}
+
+
+.text{
+    width:55%;
+    margin-left:5%;
+    text-align:center;
+    line-height:3;
+    position:absolute;
+    top:150px;
+}
+
+/*main*/
+
+.tan-box{
+    background-color:#DDB9A3;
+    text-align:center;
+    color:white;
+    padding:2%
+}
+.fire img{
+    width: 175px;
+    margin: auto;
+}
+
+.rv img{
+    width: 200px;
+    margin: auto;
+}
+
+.info div{
+    width:30%;
+    margin:5% auto;
+    text-align:center;
+}
+.bold{
+    font-weight:bold;
+}
+
+.footer-img{
+    background-image: url(/assets/footer_img.jpg);
+    height:50vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top center;
+    width:100%;
+}
+
+footer{
+    background-color:#F9E7DC;
+}
